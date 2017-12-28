@@ -1,0 +1,21 @@
+name:                oling-cat
+version:             0.1.0.0
+-- synopsis:
+description:         Oling Cat's Home Page
+homepage:            https://github.com/OlingCat/olingcat.github.io
+license:             BSD3
+license-file:        LICENSE
+author:              Oling Cat
+maintainer:          olingcat@gmail.com
+copyright:           Copyright (c) 2017 Oling Cat
+category:            Blogs
+build-type:          Simple
+extra-source-files:  README.md
+cabal-version:       >=1.10
+
+executable oling-cat
+  main-is:             site.hs
+  default-language:    Haskell2010
+  ghc-options:         -threaded
+  build-depends:       base >= 4.7 && < 5,
+                       hakyll
